@@ -151,7 +151,7 @@ $qemuImgPath = Find-QemuImg
 $vmPath = (Get-VMHost).VirtualMachinePath
 $vmStoragePath = (Get-VMHost).VirtualHardDiskPath
 $vmDiskPath = "$($VMStoragePath)\$($VMName).vhdx"
-$metaDataIso = "D:\ISO\$($GuestVMName)_metadata.iso"
+$metaDataIso = "D:\ISO\$($VMName)_metadata.iso"
 $tempPath = [System.IO.Path]::GetTempPath() + [System.Guid]::NewGuid().ToString()
 
 $existingVm = Get-VM -Name $VMName -ErrorAction SilentlyContinue
