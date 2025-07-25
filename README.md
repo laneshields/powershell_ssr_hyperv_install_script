@@ -85,7 +85,7 @@ The `128T-hardware-bootstrapper` will generate a basic configuration to allow th
 
 4. Create an SSR VM with minimum requirements. Connect a single interface to virtal switch MGMT. Initialize the device as a conductor named conductor. Set a static address of 192.168.128.100/24 and gateway 192.168.128.1 on the management-interface ge-0-0. Set the DNS servers to 10.10.10.10 and 20.20.20.20
 
-`.\NewSSR.ps1 -VMName conductor -BaseQcowPath D:\ISO\SSR-6.3.4-7.r2.el7.x86_64.ibu-v1.qcow2 -NumCores 4 -Memory 8GB -Nics MGMT -RouterName conductor -OnboardingMode conductor -NodeName node0 -ManagementInterfaceName ge-0-0 -NodeIp 192.168.128.100/24 -NodeGateway -192.168.128.1 -DnsServers 10.10.10.10,20.20.20.20`
+`.\NewSSR.ps1 -VMName conductor -BaseQcowPath D:\ISO\SSR-6.3.4-7.r2.el7.x86_64.ibu-v1.qcow2 -NumCores 4 -Memory 8GB -Nics MGMT -RouterName conductor -OnboardingMode conductor -NodeName node0 -ManagementInterfaceName ge-0-0 -NodeIp 192.168.128.100/24 -NodeGateway 192.168.128.1 -DnsServers 10.10.10.10,20.20.20.20`
 
 
 ## Troubleshooting
