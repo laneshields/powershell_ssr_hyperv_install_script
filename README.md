@@ -1,6 +1,8 @@
 # Powershell SSR Hyper-V Install Script
 Powershell script to automate SSR installation for Hyper-V environments
 
+This tool is provided as community supported and is not maintained by Juniper Networks officially. Any issues can be reported through this github repository with no guarantee that a fix will be provided and no SLA for any fix timeframes.
+
 ## Requirements
 1. A Microsoft Hyper-V server running Windows Server 2022
 
